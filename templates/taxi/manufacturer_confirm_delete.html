@@ -2,7 +2,7 @@
 {% block content %}
   <h1>DELETE MANUFACTURER</h1>
   <p><b>Are you sure you want to delete the manufacturer {{ manufacturer }}</b></p>
-    <p><i><b>All cars with this literary format will be also deleted!</b></i></p>
+    <p><i><b>All cars related to this manufacturer will also be deleted</b></i></p>
 
     <form action="" method="post">
       {% csrf_token %}
