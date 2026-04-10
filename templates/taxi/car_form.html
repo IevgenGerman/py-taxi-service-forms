@@ -4,7 +4,8 @@
   <h1>{{ object|yesno:"UPDATE,CREATE" }} CAR</h1>
     <form action="" method="post" novalidate>
       {% csrf_token %}
-      {{ form|crispy }}
+      {{ form }}
       <input class="btn btn-primary" type="submit" value="Submit">
+      <a href="{{ request.META.HTTP_REFERER }}" class="btn btn-secondary">Cansel</a>
     </form>
 {% endblock %}
