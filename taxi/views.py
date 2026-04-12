@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
-from taxi.forms import ManufacturerForm, CarForm
+from .forms import ManufacturerForm, CarForm
 from .models import Driver, Car, Manufacturer
 
 
